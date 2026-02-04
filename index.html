@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limitador Textarea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container mt-3">
+        <h2>Examen Macroscópico</h2>
+        <div class="card">
+        <div class="card-body">
+            <textarea id="macroscopiaMicro" class="form-control shadow-none"></textarea>
+            <textarea id="readMacroscopiaMicro" class="form-control"></textarea>
+            <button id="start-record-btn-macro-micro" class="btn btn-warning mt-2"><i data-feather="mic"></i> Iniciar Grabación</button>
+            <button id="stop-record-btn-macro-micro" class="btn btn-primary mt-2"><i class="fas fa-cog"></i>Detener Grabación</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Exámen Histológico</h2>
+        <div class="card">
+        <div class="card-body">
+            <textarea id="microscopiaMicro" class="form-control shadow-none"></textarea>
+            <textarea id="readMicroscopiaMicro" class="form-control"></textarea>
+            <button id="start-record-btn-micro-micro" class="btn btn-warning mt-2"><i data-feather="mic"></i> Iniciar Grabación</button>
+            <button id="stop-record-btn-micro-micro" class="btn btn-primary mt-2"><i class="fas fa-cog"></i>Detener Grabación</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Conclusión</h2>
+        <div class="card">
+        <div class="card-body">
+            <textarea id="diagnosticoMicro" class="form-control shadow-none"></textarea>
+            <textarea id="readDiagnosticoMicro" class="form-control"></textarea>
+            <button id="start-record-btn-diag" class="btn btn-warning mt-2"><i data-feather="mic"></i> Iniciar Grabación</button>
+            <button id="stop-record-btn-diag" class="btn btn-primary mt-2"><i class="fas fa-cog"></i>Detener Grabación</button>
+        </div>
+        </div>
+    </div>    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
