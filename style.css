@@ -1,0 +1,39 @@
+/* INICIO DG-1 (CSS Anidado) */
+#macroscopiaMicro,
+#microscopiaMicro,
+#diagnosticoMicro {
+  font-size: 1.20rem;
+  line-height: 2.0;
+}
+
+.lined-wrapper {
+  position: relative;
+  display: flex;
+
+  .line-gutter {
+    background: #e7e1ff;
+    border-right: 1px solid #ccc;
+    color: #cd201f;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2.0;
+    padding: 2px 6px;
+
+    /* Estas lineas permiten alinear los números de línea en el textarea de forma vertical con el texto. */
+    text-align: right;
+    user-select: none;
+    white-space: pre;
+    box-sizing: border-box;
+  }
+
+  & textarea {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: justify !important;
+
+    white-space: pre-wrap; /* permite saltos de linea visuales como Word */
+    overflow-wrap: break-word; /* rompe palabras largas si es necesario */
+    word-break: break-word;
+  }
+}
+/* FIN DG-01 (CSS Anidado) */
